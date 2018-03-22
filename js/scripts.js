@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#userSelection").submit(function() {
+  $("#userSelection").submit(function(event) {
     var selection = $("#userSelect").val();
     console.log(selection);
     if (selection === "turtles") {
