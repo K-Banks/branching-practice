@@ -1,6 +1,9 @@
 img {
   width: 30%;
 }
+.steve, .nicki, .tilda {
+  display: none;
+}
 .results {
   display: none;
 }
