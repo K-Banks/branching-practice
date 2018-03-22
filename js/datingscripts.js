@@ -43,7 +43,6 @@ $(function(){
         $(".tilda").show();
       }
     }
-// Shows match for female
 
 // Hide survey
     $("#datingSurvey").hide();
