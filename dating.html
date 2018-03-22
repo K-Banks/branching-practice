@@ -5,16 +5,26 @@
     <link rel="stylesheet" href="css/datingstyles.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/datingscripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <meta charset="utf-8">
     <title>Date me please</title>
   </head>
   <body>
     <div class="container">
-      <h1>Cosmo's Best Celebrity Match</h1>
+      <h1>COSMOPOLITAN</h1>
+      <h6>Celeb-Dipitous Matcher</h6>
+      <img src="img/heart.png" alt="Picture of a heart" class="logo">
       <form id="datingSurvey">
-        <!-- movie question -->
         <div class="well">
-          <h4>Your Fave Flick</h4>
+          <h2>Choose your dating preference!</h2>
+          <select id="preference" class="form-control">
+            <option value="lucky">⚤ I'm feeling lucky!! ⚤</option>
+            <option value="male">♂ Male ♂</option>
+            <option value="female">♀ Female ♀</option>
+            <option value="loser">I'm feeling desperate!!!</option>
+          </select>
+          <!-- movie question -->
+          <h3>Your Fave Flick</h3>
           <div class="radio">
             <label>
               <input type="radio" name="movie" value="1" checked>
@@ -33,10 +43,8 @@
               The Royal Tenenbaums
             </label>
           </div>
-        </div>
-        <!-- food question -->
-        <div class="well">
-          <h4>Nom Noms?!</h4>
+          <!-- food question -->
+          <h3>Nom Noms?</h3>
           <div class="radio">
             <label>
               <input type="radio" name="food" value="2" checked>
@@ -55,10 +63,8 @@
               Sloppy Joe
             </label>
           </div>
-        </div>
-        <!-- Color question -->
-        <div class="well">
-          <h4>Your Fave Flick</h4>
+          <!-- Color question -->
+          <h3>Color me _____ :</h3>
           <div class="radio">
             <label>
               <input type="radio" name="color" value="3" checked>
@@ -77,22 +83,39 @@
               Plaid
             </label>
           </div>
+          <button type="submit" class="button">&hearts; Find my mate! &hearts;</button>
         </div>
-        <button type="submit" class="button">Find my mate!</button>
       </form>
       <div class="results well">
         <div class="steve">
-          <h4>You're seeing stars for Steve!!!</h4>
+          <h3>You're seeing stars for Steve!!!</h3>
           <img src="img/steve.jpg" alt="Steve Buscemi">
         </div>
         <div class="nicki">
-          <h4>You're nuts for Nicki</h4>
+          <h3>You're nuts for Nicki</h3>
           <img src="img/nicki.jpg" alt="Nicki Minaj">
         </div>
         <div class="tilda">
-          <h4>~~~TILDA!!!!!~~~</h4>
+          <h3>~~~TILDA!!!!!~~~</h3>
           <img src="img/tilda.jpeg" alt="Tilda Swinton">
         </div>
+        <div class="prince">
+          <h3>Your Prince Is Waiting</h3>
+          <img src="img/prince.jpg" alt="Prince">
+        </div>
+        <div class="therock">
+          <h3>He's Your Rock</h3>
+          <img src="img/therock.jpg" alt="Dwayne Johnson">
+        </div>
+        <div class="schaal">
+          <h3>All About K Schaal</h3>
+          <img src="img/schaal.jpg" alt="Kristen Schaal">
+        </div>
+        <div class="loser">
+          <h3>You Gott-Fried</h3>
+          <img src="img/gottfried.jpg" alt="Golbert Gottfried">
+        </div>
+        <a href="dating.html"><button class="button">&hearts; Try again! &hearts;<br><span class="loser">Loser :P</span></button></a>
       </div>
     </div>
   </body>
